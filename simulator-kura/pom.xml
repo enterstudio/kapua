@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.5.2</version>
+			<version>4.5.13</version>
 		</dependency>
 
 		<dependency>
@@ -127,12 +127,10 @@
 						</filter>
 					</filters>
 					<transformers>
-						<transformer
-							implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+						<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 							<mainClass>org.eclipse.kapua.kura.simulator.main.SimulatorRunner</mainClass>
 						</transformer>
-						<transformer
-							implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer">
+						<transformer implementation="org.apache.maven.plugins.shade.resource.ApacheNoticeResourceTransformer">
 							<addHeader>false</addHeader>
 						</transformer>
 						<transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
@@ -159,7 +157,7 @@
 							<name>kapua/kura-simulator:%v</name>
 							<build>
 								<from>java:8-jre-alpine</from>
-								<maintainer>Jens Reimann &lt;jreimann@redhat.com&gt;</maintainer>
+								<maintainer>Jens Reimann &lt;jreimann@redhat.com></maintainer>
 								<tags>
 									<tag>${project.version}</tag>
 								</tags>
