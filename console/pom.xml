@@ -31,7 +31,7 @@
         <site.basedir>${project.parent.basedir}</site.basedir>
 
         <!-- Convenience property to set the GWT version -->
-        <gwt.version>2.4.0</gwt.version>
+        <gwt.version>2.5.1</gwt.version>
 
         <gxt.version>2.2.5</gxt.version>
 
@@ -327,10 +327,8 @@
                         <configuration>
                             <target>
                                 <echo>Openlayers: copy resources to webapp output folder</echo>
-                                <copy
-                                        todir="${project.build.directory}/${project.build.finalName}">
-                                    <fileset
-                                            dir="${project.build.directory}/tmp/openlayers-${openlayers.version}/META-INF/resources/webjars/">
+                                <copy todir="${project.build.directory}/${project.build.finalName}">
+                                    <fileset dir="${project.build.directory}/tmp/openlayers-${openlayers.version}/META-INF/resources/webjars/">
                                         <exclude name="**/OpenLayers.*.js"/>
                                     </fileset>
                                 </copy>
@@ -346,10 +344,7 @@
                         <configuration>
                             <target>
                                 <echo>Openlayers: customize openlayers 'ImgPath' variable</echo>
-                                <replaceregexp byline="true"
-                                               file="${project.build.directory}/${project.build.finalName}/openlayers/${openlayers.version}/OpenLayers.js"
-                                               match="ImgPath:&quot;&quot;"
-                                               replace="ImgPath:&quot;openlayers/${openlayers.version}/img/&quot;"/>
+                                <replaceregexp byline="true" file="${project.build.directory}/${project.build.finalName}/openlayers/${openlayers.version}/OpenLayers.js" match="ImgPath:&quot;&quot;" replace="ImgPath:&quot;openlayers/${openlayers.version}/img/&quot;"/>
                             </target>
                         </configuration>
                     </execution>
