@@ -43,7 +43,7 @@
         <javassist.version>3.19.0-GA</javassist.version>
         <joda.version>2.9.4</joda.version>
         <junit.version>4.11</junit.version>
-        <liquibase.version>3.0.5</liquibase.version>
+        <liquibase.version>3.0.6</liquibase.version>
         <mariadb.version>1.4.6</mariadb.version>
         <mockito.version>1.10.19</mockito.version>
         <paho.version>1.1.0</paho.version>
@@ -165,7 +165,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -178,7 +178,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -191,7 +191,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                                 <pluginExecution>
@@ -204,7 +204,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
